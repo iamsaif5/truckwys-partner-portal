@@ -69,7 +69,7 @@ export default function PartnerDashboard() {
   const [selectedOperator, setSelectedOperator] = useState<number | null>(null);
   const [operatorRisk, setOperatorRisk] = useState<OperatorRiskDetail | null>(null);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+  const [_error, setError] = useState<string | null>(null);
   const [activeTab, setActiveTab] = useState<'overview' | 'vintage'>('overview');
 
   const handleExportCSV = () => {
